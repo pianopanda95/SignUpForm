@@ -1,0 +1,116 @@
+:root{
+    font: 1.2rem Helvetica, sans-serif;
+    box-sizing: border-box;
+    --main-color: orange;
+    --sec-color: orangered;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+@font-face {
+    font-family: 'slim-nice';
+    src: url(./fonts/Brotherhood_Script.ttf);
+}
+
+body {
+    background-color: rgb(0, 87, 138);
+    background-image: url(./pictures/bg-image.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+aside {
+    background-color: rgb(36, 36, 36, .7);
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+}
+aside > img {
+    margin-top: 6rem;
+}
+aside > h2 {
+    font: 5rem 'slim-nice', Helvetica;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0 auto 0 2rem;
+}
+
+main {
+    font-size: 1.2rem;
+    background-color: rgb(36, 36, 36, .9);
+    width: max(60%, 400px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+}
+main  p {
+    line-height: 1.5rem;
+}
+main > p.disclaimer {
+    font-style: italic;
+    opacity: .8;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid var(--sec-color);
+
+}
+legend {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border: 1px solid var(--sec-color);
+    border-radius: 50%;
+    color: var(--sec-color);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: min(1rem, 1.5rem);
+}
+
+.info-item {
+    padding: 0.8rem;
+    margin: auto;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+input {
+    height: 1.2rem;
+    width: 250px;
+    border-radius: 4px;
+    background-color: beige;
+    font-size: 1rem;
+    padding: .2rem;
+}
+
+input:focus {
+    background-color: burlywood;
+}
+
+button {
+    background-color: var(--main-color);
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+button:hover {
+    color: var(--main-color);
+    background-color: brown;
+}
